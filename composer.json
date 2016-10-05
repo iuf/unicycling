@@ -1,0 +1,42 @@
+{
+	"name": "iuf/unicycling",
+	"description": "Static data about unicycling (disciplines and competitions)",
+	"type": "keeko-module",
+	"license": "MIT",
+	"keywords": [
+		"unicycling"
+	],
+	"authors": [
+		{
+			"name": "gossi"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"iuf\\unicycling\\": "src"
+		}
+	},
+	"require": {
+		"php": ">=5.5",
+		"keeko/composer-installer": "*"
+	},
+	"require-dev": {
+		"keeko/core": "@dev",
+		"composer/composer": "@dev",
+		"propel/propel": "@alpha",
+		"puli/composer-plugin": "@beta",
+		"keeko/framework": "dev-master",
+		"puli/repository": "@beta",
+		"puli/twig-extension": "@beta",
+		"puli/url-generator": "@beta",
+		"puli/discovery": "@beta"
+	},
+	"extra": {
+		"keeko": {
+			"module": {
+				"title": "Iuf Unicycling",
+				"class": "iuf\\unicycling\\UnicyclingModule"
+			}
+		}
+	}
+}
